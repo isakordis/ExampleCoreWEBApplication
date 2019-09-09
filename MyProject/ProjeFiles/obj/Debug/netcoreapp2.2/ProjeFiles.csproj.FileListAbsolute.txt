@@ -32,9 +32,9 @@ C:\Users\MSI\source\repos\MyProject\ProjeFiles\obj\Debug\netcoreapp2.2\Razor\Vie
 C:\Users\MSI\source\repos\MyProject\ProjeFiles\obj\Debug\netcoreapp2.2\Razor\Views\Products\Delete.g.cshtml.cs
 C:\Users\MSI\source\repos\MyProject\ProjeFiles\obj\Debug\netcoreapp2.2\Razor\Views\Products\Details.g.cshtml.cs
 C:\Users\MSI\source\repos\MyProject\ProjeFiles\obj\Debug\netcoreapp2.2\Razor\Views\Products\Edit.g.cshtml.cs
-C:\Users\MSI\source\repos\MyProject\ProjeFiles\obj\Debug\netcoreapp2.2\Razor\Views\Products\Index.g.cshtml.cs
 C:\Users\MSI\source\repos\MyProject\ProjeFiles\obj\Debug\netcoreapp2.2\Razor\Views\Users\Create.g.cshtml.cs
 C:\Users\MSI\source\repos\MyProject\ProjeFiles\obj\Debug\netcoreapp2.2\Razor\Views\Users\Delete.g.cshtml.cs
 C:\Users\MSI\source\repos\MyProject\ProjeFiles\obj\Debug\netcoreapp2.2\Razor\Views\Users\Details.g.cshtml.cs
 C:\Users\MSI\source\repos\MyProject\ProjeFiles\obj\Debug\netcoreapp2.2\Razor\Views\Users\Edit.g.cshtml.cs
 C:\Users\MSI\source\repos\MyProject\ProjeFiles\obj\Debug\netcoreapp2.2\Razor\Views\Users\Index.g.cshtml.cs
+C:\Users\MSI\source\repos\MyProject\ProjeFiles\obj\Debug\netcoreapp2.2\Razor\Views\Products\Index.g.cshtml.cs

@@ -19,9 +19,15 @@ namespace ProjeFiles.Controllers
         }
 
         // GET: Products
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string search)
         {
-            return View(await _context.products.ToListAsync());
+            var finded = from m in _context.products
+                         select m;
+            if (!String.IsNullOrEmpty(search))
+            {
+                finded = finded.Where(s => s.name.Contains(search));
+            }
+            return View(await finded.ToListAsync());
         }
 
         // GET: Products/Details/5

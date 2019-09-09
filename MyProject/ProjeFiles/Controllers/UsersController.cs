@@ -19,9 +19,16 @@ namespace ProjeFiles.Controllers
         }
 
         // GET: Users
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string search)
         {
-            return View(await _context.users.ToListAsync());
+            //users modelını kullandıgımızı belırtıyoruz.
+            var finded = from m in _context.users
+                         select m;
+            if (!String.IsNullOrEmpty(search))
+            {
+                finded = finded.Where(s => s.userName.Contains(search));
+            }
+            return View(await finded.ToListAsync());
         }
 
         // GET: Users/Details/5
