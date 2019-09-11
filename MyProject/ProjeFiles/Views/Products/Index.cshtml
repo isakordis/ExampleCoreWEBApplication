@@ -12,53 +12,59 @@
     <title>Index</title>
 </head>
 <body>
-<p>
-    <a href="/products/Create">Create New</a>
-</p>
+    <a asp-controller="Home" asp-action="Index">Home Page</a>
+    <p>
+        <a href="/products/Create">Create New</a>
+
+    </p>
     <form asp-controller="Products" asp-action="Index">
         <p>
-            Name: <input type="text"  name="search"/>
+            Name: <input type="text" name="search" />
             <input type="submit" value="Filter" />
         </p>
 
 
     </form>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.category)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.prize)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.category)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.prize)
-            </td>
-            <td>
-                <!-- <a asp-action="Edit" asp-route-id="item.guid">Edit</a> şeklinde de islem yapabılıyoruz.  -->
-                <a href="/Products/Edit/@item.guid">Edit</a> |
-                <a href="/Products/Details/@item.guid">Details</a> |
-                <a href="/Products/Delete/@item.guid">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.category)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.prize)
+                </th>
+
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.category)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.prize)
+                    </td>
+
+                    <td>
+                        <!-- <a asp-action="Edit" asp-route-id="item.guid">Edit</a> şeklinde de islem yapabılıyoruz.  -->
+                        <a href="/Products/Edit/@item.guid">Edit</a> |
+                        <a href="/Products/Details/@item.guid">Details</a> |
+                        <a href="/Products/Delete/@item.guid">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
 </body>
 </html>

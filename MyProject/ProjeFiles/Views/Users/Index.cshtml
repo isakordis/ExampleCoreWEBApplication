@@ -12,9 +12,12 @@
     <title>Index</title>
 </head>
 <body>
+    <a asp-controller="Home" asp-action="Index">Home Page</a>
     <p>
         <a href="/users/Create">Create New</a>
+
     </p>
+
     <form asp-controller="Users" asp-action="Index">
         <p>
             Name: <input type="text" name="search" />

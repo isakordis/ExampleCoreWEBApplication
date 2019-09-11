@@ -12946,11 +12946,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\MSI\\source\\repos\\MyProject\\ProjeFiles\\ProjeFiles.csproj",
+      "projectUniqueName": "C:\\Users\\MSI\\Documents\\GitHub\\ExampleCoreWEBApplication\\MyProject\\ProjeFiles\\ProjeFiles.csproj",
       "projectName": "ProjeFiles",
-      "projectPath": "C:\\Users\\MSI\\source\\repos\\MyProject\\ProjeFiles\\ProjeFiles.csproj",
+      "projectPath": "C:\\Users\\MSI\\Documents\\GitHub\\ExampleCoreWEBApplication\\MyProject\\ProjeFiles\\ProjeFiles.csproj",
       "packagesPath": "C:\\Users\\MSI\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\MSI\\source\\repos\\MyProject\\ProjeFiles\\obj\\",
+      "outputPath": "C:\\Users\\MSI\\Documents\\GitHub\\ExampleCoreWEBApplication\\MyProject\\ProjeFiles\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

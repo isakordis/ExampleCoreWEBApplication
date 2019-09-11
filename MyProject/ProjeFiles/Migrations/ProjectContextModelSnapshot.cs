@@ -21,8 +21,11 @@ namespace ProjeFiles.Migrations
 
             modelBuilder.Entity("ProjeFiles.Models.Product", b =>
                 {
-                    b.Property<Guid>("guid")
-                        .ValueGeneratedOnAdd();
+                    b.Property<int>("guid")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<DateTime>("GetPro");
 
                     b.Property<string>("category");
 
@@ -37,8 +40,9 @@ namespace ProjeFiles.Migrations
 
             modelBuilder.Entity("ProjeFiles.Models.Users", b =>
                 {
-                    b.Property<Guid>("guid")
-                        .ValueGeneratedOnAdd();
+                    b.Property<int>("guid")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("userName");
 
